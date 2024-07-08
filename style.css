@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(180deg, blue, yellow);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tetris {
+    border: 5px solid rgb(51, 108, 182);
+    display: grid;
+    grid-template-columns: repeat(10, auto);
+}
+
+.score,
+.score-total {
+    font-size: 80px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 30px;
+    padding: 20px;
+    border-radius: 30px;
+    min-width: 80px;
+    text-align: center;
+    border: 5px solid rgb(100, 157, 221);
+    background-color: #266facbb;
+}
+
+.tetris div {
+    height: min(4vh, 7vw);
+    width: min(4vh, 7vw);
+    background: rgba(224, 255, 255, 0.514);
+    box-shadow: inset 2px 2px 2px rgb(158, 196, 214), inset -2px -2px 2px rgb(27, 27, 27);
+}
+
+.tetris .O {
+    background: rgb(228, 35, 35);
+}
+
+.tetris .L {
+    background: rgb(4, 129, 31);
+}
+
+.tetris .J {
+    background: rgb(26, 79, 148);
+}
+
+.tetris .T {
+    background: rgb(179, 24, 199);
+}
+
+.tetris .I {
+    background: rgb(155, 168, 32);
+}
+
+.tetris .S {
+    background: rgb(108, 110, 109);
+}
+
+.tetris .Z {
+    background: rgb(73, 139, 106);
+}
+
+.overlay {
+    background:  rgba(33, 32, 34, 0.849);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.time-game {
+    font-size: 50px;
+    padding: 50px;
+    border: 10px solid rgb(100, 157, 221);
+    background-color: #266facbb;
+}
+
+.btn-restart {
+    width: 200px;
+    height: 100px;
+    font-size: 50px;
+    border: 5px solid #031fb9;
+    border-radius: 25px;
+    background: #314ef0;
+    color: white;
+    cursor: pointer;
+}
+
+.control {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.left-right-container {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.btn-pause {
+    margin: 80px;
+    margin-bottom: 50px;
+}
